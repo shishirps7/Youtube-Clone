@@ -10,14 +10,21 @@
   color: white;
   font-family: roboto;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 body {
   background-color: var(--bgcolor);
 }
 nav {
   display: flex;
-  width: 100vw;
-  height: 60px;
-  /* background-color: red; */
+  width: 100%;
+  height: 8.3vh;
+  position: sticky;
+  top: 0;
+  background-color: #0F0F0F;
+  z-index: 100;
 }
 .navleft {
   display: flex;
@@ -109,7 +116,7 @@ nav {
   width: 10.8%;
   height: 100%;
   background-color: #222222;
-  padding: 6px 0;
+  padding: 7px 0;
 }
 .mic {
   height: 69%;
@@ -192,4 +199,136 @@ nav {
 .profile_icon:hover{
   cursor: pointer;
   border: 1px solid #222222;
+}
+#main{
+  display: flex;
+  width: 100%;
+  height: 91.7vh;
+  overflow-y: hidden;
+}
+.leftmain{
+  position: sticky;
+  overflow-y: scroll;
+  scrollbar-color: yellow;
+  height: 100%;
+  left: 0;
+  flex: 1;
+  background-color: #0F0F0F;
+  font-size: 14.5px;
+}
+.leftmain::-webkit-scrollbar {
+  width: 7px; /* Set width */
+  background-color: #0F0F0F; /* Track background */
+}
+
+.leftmain::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 5px;
+}
+
+/* Optional: Hover effect */
+.leftmain::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.rightmain{
+  overflow-y: scroll;
+  height: auto;
+  flex: 5.5;
+  background-color: rgba(90, 7, 90, 0.592);
+}
+
+.sidebarContent{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  gap: 20px;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+}
+.sidebarContent:hover{
+  background-color: #3a3a3a;
+}
+.sidebarContent>div{
+  width: 25px; 
+  height: 25px; 
+  display:block; 
+   fill: currentcolor;
+}
+
+.leftDivsCommon{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  padding-inline: 20px;
+  padding-left: 15px;
+  border-bottom: 1px solid grey;
+}
+.leftmainTop{
+ display: flex;
+  flex-direction: column;
+  width: 90%; 
+  margin-left: 13.4px ;
+  border-bottom: 1px solid grey;
+  padding:5px 0;
+  padding-right: 10px;
+  
+}
+.youanchor>.sidebarContent>h3{
+  font-size: 17px;
+}
+.youanchor>.sidebarContent>div{
+   width: 15px; 
+  height: 15px;
+  margin-top: 3px;
+}
+.youanchor>.sidebarContent{
+  gap: 7px;
+}
+.leftdivshead{
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 12px;
+  font-weight: 500;
+}
+.subprofile{
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.active{
+  margin-right: 5px;
+    width: 15px !important; 
+  height: 15px !important; 
+  display:block; 
+   fill: red;
+}
+#subs .sidebarContent{
+  gap: 20px;
+}
+#subs .sidebarContent>span{
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1
+}
+.showmore:hover{
+  cursor: pointer;
+}
+.leftfooter{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.leftfooter>*{
+  margin: 10px 5px 10px 0;
+}
+.leftfooter>#terms{
+  margin: 10px 5px 10px 0;
 }
