@@ -1,0 +1,151 @@
+.rightmainn{
+     overflow-y: scroll;
+  width: auto;
+  height: 100%;
+  flex: 5.5;
+  background-color: #0f0f0f;
+  padding-left: 20px;
+}
+
+.rightmainn::-webkit-scrollbar {
+  width: 7px; 
+
+}
+
+.rightmainn::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 5px;
+}
+
+.rightmainn::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+.shorts{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-left: auto;
+    gap: 20px;
+}
+.shortsleft{
+    display: flex;
+    height: 94%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.shortsleftprofileinfo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profileshorts {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.subscribeshorts {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.shortsleft>p{
+font-size: 22px;
+width: 300px;
+white-space: wrap;
+}
+.shortscenter {
+    margin-top: 10px;
+  height: 600px;
+  width: 500px;
+  display: flex;
+}
+.shortsvid{
+    width: 360px;
+    height: 100%;
+    border-radius: 10px;
+}
+.shortsMore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: auto;
+    padding-left: 13px;
+    gap: 12px;
+    padding-top: 10px;
+}
+.shortssetting {
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 12.4px;
+}
+.shortslike {
+    margin-top: 40px;
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 13px;
+}
+.shortsdislike {
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 13px;
+}
+.shortscomments {
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 13px;
+}
+.shortsshare {
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 13px;
+}
+.shortsremix {
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  border-radius: 50%;
+  padding: 13px;
+}
+.shortsprofilemain {
+  height:42px;
+  width: 42px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.shortscommon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.shortscommon>span{
+    font-size: 15px;
+}
+.hoverr:hover{
+    cursor: pointer;
+    background-color:#444343b1 ;
+}
+.shortscommon>span:hover{
+    cursor: pointer;
+}
